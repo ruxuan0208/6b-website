@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #111; 
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        section {
+            height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box; /* Keeps padding from breaking the layout */
+        }
+
+        /* The new, simple image styling */
+        section img {
+            max-width: 90%;      /* Takes up most of the width, but leaves a margin */
+            max-height: 70vh;    /* Leaves 30% of the screen height for your text */
+            object-fit: contain; /* Ensures the whole image is visible without stretching */
+            margin-bottom: 20px;
+            border-radius: 8px;  /* Optional: gives the images slightly soft corners */
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <img src="bus_in.jpg" alt="Riding the bus" data-aos="fade-right" data-aos-duration="1500">
+        <h2 data-aos="fade-up" data-aos-delay="300">Taking the bus to grocery shopping...</h2>
+    </section>
+
+    <section>
+        <img src="costco.jpg" alt="Arriving at grocery store" data-aos="fade" data-aos-duration="2000">
+        <h2 data-aos="fade" data-aos-delay="500">Arriving at the grocery.</h2>
+    </section>
+
+    <section>
+        <img src="shopping.jpg" alt="Buying groceries" data-aos="fade" data-aos-duration="2000">
+        <h2 data-aos="fade" data-aos-delay="500">Buying some fresh food.</h2>
+    </section>
+
+    <section>
+        <img src="sunset.jpg" alt="Sunset walk home" data-aos="fade" data-aos-duration="3000">
+        <h2 data-aos="fade-up" data-aos-delay="800">Heading home under a beautiful sunset.</h2>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
